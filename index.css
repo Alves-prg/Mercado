@@ -29,7 +29,6 @@ footer.bg-light {
   font-size: 0.9rem;
 }
 
-/* Header já tem bg-primary do Bootstrap - mantém azul */
 
 /* Remove possível margem extra no nav */
 header nav ul.nav {
