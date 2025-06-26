@@ -19,6 +19,25 @@
   margin-right: auto;
 }
 
+/* Corpo da página com flex para footer fixo no rodapé */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main cresce para ocupar espaço e empurrar o footer para baixo */
+main.container {
+  flex: 1 0 auto;
+}
+
+/* Footer fixo no rodapé */
 footer.bg-light {
   flex-shrink: 0;
   background-color: #f8f9fa;
