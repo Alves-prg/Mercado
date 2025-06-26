@@ -1,0 +1,42 @@
+/* Define tamanho fixo e proporção das imagens dos cards */
+.card-img-top {
+  width: 150px;       /* largura fixa */
+  height: 150px;      /* altura fixa */
+  object-fit: cover;  /* mantém proporção e corta o excesso */
+  margin: 0 auto;     /* centraliza horizontalmente */
+  border-radius: 8px; /* cantos arredondados */
+}
+
+/* Centraliza texto dentro do card */
+.card-body {
+  text-align: center;
+}
+
+/* Sticky footer */
+/* Define altura total para body e html */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body como flex container vertical */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main cresce para ocupar espaço */
+main.container {
+  flex: 1 0 auto;
+}
+
+/* Footer fixo ao final da página */
+footer.bg-light {
+  flex-shrink: 0;
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
