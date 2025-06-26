@@ -1,0 +1,5 @@
+.carousel-item img {
+  max-height: 400px;  /* ajusta conforme o que preferir */
+  object-fit: cover;  /* corta a imagem proporcionalmente para preencher */
+  width: 100%;       /* largura total do container */
+}
