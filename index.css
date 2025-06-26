@@ -1,26 +1,38 @@
-/* Corpo da página com flex para footer fixo no rodapé */
+/* Reset básico */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
+/* Body como flex container vertical para footer fixo */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #fff; /* fundo branco */
+  color: #000; /* texto preto padrão */
 }
 
-/* Main cresce para ocupar espaço e empurrar o footer para baixo */
+/* Main ocupa espaço disponível */
 main.container {
   flex: 1 0 auto;
+  padding-bottom: 1rem; /* evitar que conteúdo fique grudado no footer */
 }
 
-/* Footer fixo no rodapé */
+/* Footer no rodapé */
 footer.bg-light {
   flex-shrink: 0;
-  background-color: #f8f9fa;
+  background-color: #f8f9fa; /* cor clara, cinza claro */
   padding: 1rem 0;
   text-align: center;
   font-size: 0.9rem;
+}
+
+/* Header já tem bg-primary do Bootstrap - mantém azul */
+
+/* Remove possível margem extra no nav */
+header nav ul.nav {
+  margin: 20;
+  padding-left: 0;
 }
