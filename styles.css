@@ -18,3 +18,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+footer.bg-light {
+  flex-shrink: 0;
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
